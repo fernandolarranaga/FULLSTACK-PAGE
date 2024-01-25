@@ -1,0 +1,59 @@
+GET http://localhost:3000/api/songs
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjU4MzRhYzg0MTA3N2RhZGNhNzAzNzE5IiwidXNlcl9yb2xlIjoicmVndWxhciIsImlhdCI6MTcwMzE0OTkyNH0.NKQjn3g3-VOGEPlNb90RnajoaXf8_QLpJUBVNakObEQ
+###
+GET http://localhost:3000/api/songs/6571ff1d68967503a6a4a9f4
+
+###
+POST http://localhost:3000/api/songs
+Content-Type: application/json
+
+{
+    "title": "Fernando",
+    "artist": "Abba",
+    "genre": "pop",
+    "album": "Abba",
+    "duration": 220,
+    "year": 1976,
+    "trackNumber": 1,
+    "isExplicit": true
+}
+
+###
+PUT http://localhost:3000/api/songs/6574cb5e10441908848fc2f7
+Content-Type: application/json
+
+{
+     "title": "La flaca",
+    "artist": "Jarabe de Palo",
+    "genre": "pop-rock español",
+    "album": "La Flaca",
+    "duration": 220,
+    "year": 1996,
+    "trackNumber": 1,
+    "isExplicit": true
+}
+
+###
+DELETE http://localhost:3000/api/songs/6574cb5e10441908848fc2f7
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username":"pepito",
+    "email":"pepito@gmail.com",
+    "password":"12345"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email":"pepito@gmail.com",
+    "password":"12345"
+}
+
+
+

@@ -1,0 +1,23 @@
+<div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+    <div class="menu-container text-center p-4" style="background-color: rgba(249, 249, 249, 0.7); border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 80%; max-width: 600px;">
+       
+        
+
+        <div *ngIf="song">
+           
+            <img src="{{song.photo}}" class="img-fluid mb-1" alt="Portada de la canción" style="border-radius: 8px;">
+            <h1 class="fs-4 mb-3">{{song.title}}</h1>
+            <h3 class="fs-5 mb-3">{{song.artist}}</h3>
+            <h4 class="fs-6 mb-3">{{song.genre}}</h4>
+            <h5 class="fs-6 mb-3">{{song.album}}</h5>
+            <h5 class="fs-6 mb-3">{{song.year}}</h5>
+            <h6 class="fs-6 mb-3">Publicado por: {{song.author?.email}} {{song.author?.username}}</h6>  
+                      
+            <button class="btn btn-danger" 
+            *ngIf="song" 
+            (click)="onClickBorrar(song?._id)">Eliminar</button>
+            <p class="fs-5 mb-4" [routerLink]="['/songs/edit/' + song?._id]">Modifica esta canción</p>
+        </div>
+    </div>
+</div>
+

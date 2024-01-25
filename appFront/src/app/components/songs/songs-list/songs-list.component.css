@@ -1,0 +1,16 @@
+.songs{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    color:white;
+}
+
+.song{
+    width:300px;
+    padding:20px;
+    border:1px solid black;
+    background-color: rgba(26, 34, 38, 0.8);
+   /*  background-image: url('music2.jpg'); */
+
+}

@@ -1,0 +1,13 @@
+<div class="contenedor">
+    <div class="songs">
+        <div class="song list d-flex flex-column align-items-center" *ngFor="let item of songs">
+            <img src="{{item.photo}}" height="100px" alt="" class="mx-auto my-auto">
+            <h4>{{item.title}}</h4>
+            <p>Album: {{item.album}}</p>
+            <p>Artista: {{item.artist}}</p>
+            <div>
+                <button class="btn btn-info" [routerLink]="['/songs', item._id]">Details</button>
+            </div>
+        </div>
+    </div>
+</div>

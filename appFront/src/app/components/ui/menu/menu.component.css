@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(26, 34, 38);
+    padding: 10px 0; /* Ajusta el relleno según sea necesario */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+}
+
+/* Ajusta los estilos de los enlaces cuando se pasan por encima */
+nav ul li:hover {
+    text-decoration: underline;
+}
