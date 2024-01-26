@@ -31,7 +31,6 @@ export class NewSongComponent implements OnInit {
   onSubmit() {
     console.log(this.formulario.value);
 
-    // Assuming you have the author's id and email available in the component
     const authorId = 'author_id_here';
     const authorEmail = 'author_email_here';
 
